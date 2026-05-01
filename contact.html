@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Offerte | Oglaio Druiventak — Phyllon Connectedwork</title>
+  <meta name="description" content="Vraag een vrijblijvende offerte aan voor DTA-toezicht of asbestsanering. Snel antwoord, duidelijke prijzen.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.97rem; color: var(--text); background: var(--white); transition: var(--transition); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--green-mid); box-shadow: 0 0 0 3px rgba(46,168,124,0.12); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+    .form-submit { width: 100%; justify-content: center; padding: 14px; font-size: 1rem; }
+    .form-note { text-align: center; font-size: 0.82rem; color: var(--text-muted); margin-top: 12px; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="Phyllon Connectedwork">
+      </a>
+      <button class="nav-toggle" aria-label="Menu openen" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html">Over mij</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="contact.html" class="active btn btn-sm">Vraag een offerte</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7)">Contact</span>
+      <h1>Offerte aanvragen</h1>
+      <p>Vrijblijvend en snel. Vul het formulier in — ik reageer binnen 1 werkdag.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <span class="eyebrow">Direct bereikbaar</span>
+          <h3>Oglaio Druiventak</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <strong>Telefoon</strong>
+              <a href="tel:+31600000000">[telefoonnummer invullen]</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <strong>E-mail</strong>
+              <a href="mailto:info@phyllonconnectedwork.nl">[e-mail invullen]</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🌍</div>
+            <div class="contact-detail-text">
+              <strong>Werkgebied</strong>
+              <a>Heel Nederland</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Reactietijd</strong>
+              <a>Binnen 1 werkdag</a>
+            </div>
+          </div>
+
+          <div style="margin-top:32px; padding:24px; background:var(--off-white); border-radius:var(--radius-lg); border:1px solid var(--border);">
+            <strong style="color:var(--navy); display:block; margin-bottom:8px">Bedrijfsgegevens</strong>
+            <p style="font-size:0.88rem; line-height:2;">
+              Phyllon Connectedwork<br>
+              KvK 82726098<br>
+              DTA · DAV · SC-530
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="booking-box">
+            <span class="eyebrow">Vrijblijvende offerte</span>
+            <h3>Stuur een aanvraag</h3>
+            <p>Geef zoveel mogelijk informatie mee — dan kan ik snel en nauwkeurig een offerte sturen.</p>
+
+            <!--
+              TIP: Ga naar formspree.io, maak een formulier aan en vervang de action URL.
+            -->
+            <form action="https://formspree.io/f/JOUW_FORMSPREE_ID_OGLAIO" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="naam">Naam *</label>
+                  <input type="text" id="naam" name="naam" required placeholder="Jouw naam">
+                </div>
+                <div class="form-group">
+                  <label for="bedrijf">Bedrijf</label>
+                  <input type="text" id="bedrijf" name="bedrijf" placeholder="Optioneel">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+                </div>
+                <div class="form-group">
+                  <label for="telefoon">Telefoon</label>
+                  <input type="tel" id="telefoon" name="telefoon" placeholder="06-12345678">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="dienst">Welke dienst? *</label>
+                <select id="dienst" name="dienst" required>
+                  <option value="">— Maak een keuze —</option>
+                  <option value="dta-toezicht">DTA-toezicht</option>
+                  <option value="asbestsanering">Asbestsanering</option>
+                  <option value="advies">Advies / oriëntatie</option>
+                  <option value="anders">Anders</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="locatie">Locatie / postcode</label>
+                <input type="text" id="locatie" name="locatie" placeholder="Stad of postcode van het object">
+              </div>
+              <div class="form-group">
+                <label for="bericht">Situatie omschrijven *</label>
+                <textarea id="bericht" name="bericht" required placeholder="Beschrijf kort de situatie: wat voor pand, wat er gevonden is, wanneer de werkzaamheden gepland zijn..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Verstuur aanvraag</button>
+              <p class="form-note">Gratis en vrijblijvend. Ik reageer binnen 1 werkdag.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.svg" alt="Phyllon Connectedwork">
+        <p>Oglaio Druiventak<br>📞 [telefoonnummer invullen]<br>📧 [e-mail invullen]</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="over.html">Over mij</a>
+        <a href="diensten.html">Diensten</a>
+        <a href="contact.html">Offerte aanvragen</a>
+      </div>
+      <div class="footer-info">
+        <p>Phyllon Connectedwork<br>KvK 82726098<br>DTA · DAV · SC-530</p>
+        <p style="margin-top:12px"><a href="../index.html" style="color:rgba(255,255,255,0.6);font-size:0.85rem">↗ Marjet Bremer — Jeugdzorg & ethiek</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Phyllon Connectedwork · Oglaio Druiventak · Asbest toezicht & sanering</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
